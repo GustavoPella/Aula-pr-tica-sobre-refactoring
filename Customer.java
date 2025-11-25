@@ -19,7 +19,7 @@ class Customer {
         return _name;
     }
 
-     public String statement() {
+    public String statement() {
         return new TextStatement().value(this);
     }
 
@@ -31,7 +31,6 @@ class Customer {
         return _rentals.elements();
     }
 
-    // NOVO: agora é público
     public double getTotalCharge() {
         double result = 0;
         Enumeration rentals = _rentals.elements();
