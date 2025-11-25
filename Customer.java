@@ -19,8 +19,7 @@ class Customer {
         return _name;
     }
 
-    // NOVO: agora usa TextStatement
-    public String statement() {
+     public String statement() {
         return new TextStatement().value(this);
     }
 
